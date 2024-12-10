@@ -487,12 +487,19 @@ a.snapchat
 }
 
 .skillItems{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px , auto));
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
     box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
                   rgba(0,0,0,0.06)0px 1px 2px 0px;
     padding: 2rem 1rem;
     border-radius: 10px;
     background: var(--gradient-white-bg2);
     text-align: center;
+    
 }
 
 .icon-skills{
