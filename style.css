@@ -477,7 +477,7 @@ a.snapchat
     text-transform: uppercase;
 }
 
-.allServices{
+.skills{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px , auto));
     align-items: center;
@@ -486,7 +486,7 @@ a.snapchat
     z-index: 1;
 }
 
-.servicesItem{
+.skillItem{
     box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
                   rgba(0,0,0,0.06)0px 1px 2px 0px;
     padding: 2rem 1rem;
