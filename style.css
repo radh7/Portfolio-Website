@@ -478,7 +478,7 @@ a.snapchat
 }
 
 .skills{
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px , auto));
     align-items: center;
     gap: 2rem;
