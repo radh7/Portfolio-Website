@@ -456,8 +456,8 @@ a.snapchat
     margin-top: 1.5rem;
 }
 
-/* ==================== Services section css code ============================ */
-.services{
+/* ==================== Skills section css code ============================ */
+.skills{
     position: relative;
 }
 
@@ -486,7 +486,7 @@ a.snapchat
     z-index: 1;
 }
 
-.skillItem{
+.skillItems{
     box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
                   rgba(0,0,0,0.06)0px 1px 2px 0px;
     padding: 2rem 1rem;
@@ -517,7 +517,7 @@ a.snapchat
     z-index: 1;
 }
 
-.skillsItem:hover i{
+.skillItems:hover i{
     outline: 1px solid var(--main-color);
     transform: scale(1.2);
 }
@@ -533,11 +533,11 @@ a.snapchat
     animation: animate 1s linear infinite;
 }
 
-.skillItem h3{
+.skillItems h3{
     margin: 1rem 0 0.5rem;
 }
 
-.skillItem p{
+.skillItems p{
     margin-bottom: 1.5rem;
     font-size: .9rem;
     color: var(--font-color);
@@ -637,7 +637,7 @@ a.snapchat
 }
 
 
-/* ==================== Services section css code ============================ */
+/* ==================== Skills section css code ============================ */
 .fillter-buttons{
     text-align: center;
     padding: .5rem;
