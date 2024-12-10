@@ -257,7 +257,7 @@ a.facebook{
     background:#034cac;
 }
 a.telegram{
-    background: #50b3ff;
+    background: #50b3ff;        
 }
 a.linkedin{
     background: #034cac;
@@ -478,7 +478,7 @@ a.snapchat
 }
 
 .skills{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit,minmax(220px , auto));
     align-items: center;
     gap: 2rem;
