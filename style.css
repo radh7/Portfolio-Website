@@ -488,7 +488,7 @@ a.snapchat
 
 .skillItems{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px , auto));
+    grid-template-rows: repeat(auto-fit,minmax(220px , auto));
     align-items: center;
     gap: 2rem;
     position: relative;
