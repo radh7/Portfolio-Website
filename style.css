@@ -495,12 +495,12 @@ a.snapchat
     text-align: center;
 }
 
-.icon-services{
+.icon-skills{
     display: inline-flex;
     position: relative;
 }
 
-.icon-services i{
+.icon-skills i{
     box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
                   rgba(0,0,0,0.06)0px 1px 2px 0px;
     padding: .5rem;
@@ -517,12 +517,12 @@ a.snapchat
     z-index: 1;
 }
 
-.servicesItem:hover i{
+.skillsItem:hover i{
     outline: 1px solid var(--main-color);
     transform: scale(1.2);
 }
 
-.icon-services span{
+.icon-skills span{
     position: absolute;
     width: 80px;
     height: 80px;
@@ -533,11 +533,11 @@ a.snapchat
     animation: animate 1s linear infinite;
 }
 
-.servicesItem h3{
+.skillItem h3{
     margin: 1rem 0 0.5rem;
 }
 
-.servicesItem p{
+.skillItem p{
     margin-bottom: 1.5rem;
     font-size: .9rem;
     color: var(--font-color);
@@ -578,24 +578,24 @@ a.snapchat
     z-index: 2;
 }
 
-.services .text-box span{
+.skills .text-box span{
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.services .text-box h3{
+.skills .text-box h3{
     margin-top: 1rem;
     margin-bottom: 2rem;
     font-size: 2.3rem;
     font-weight: 800;
 }
 
-.services .text-box .btn{
+.skills .text-box .btn{
     padding: 10px 20px;
 }
 
 
-.services .showcase .ring{
+.skills .showcase .ring{
     width: 100px;
     height: auto;
     position: absolute;
@@ -603,7 +603,7 @@ a.snapchat
     left: -3%;
 }
 
-.services .showcase .circle{
+.skills .showcase .circle{
     position: absolute;
     width: 70px;
     height: auto;
@@ -612,14 +612,14 @@ a.snapchat
     filter: blur(3px);
 }
 
-.services .showcase .circle2{
+.skills .showcase .circle2{
     position: absolute;
     width: 40px;
     height: auto;
     filter: blur(3px);
 }
 
-.services .showcase .circle3{
+.skills .showcase .circle3{
     position: absolute;
     width: 70px;
     height: auto;
@@ -628,7 +628,7 @@ a.snapchat
     left: 22%;
 }
 
-.services .showcase .half-ring{
+.skills .showcase .half-ring{
     position: absolute;
     width: 120px;
     height: auto;
