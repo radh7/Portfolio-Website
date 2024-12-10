@@ -488,7 +488,6 @@ a.snapchat
 
 .skillItems {
     width: 100%; /* Make skill items take the full width */
-    max-width: 400px; /* Set a maximum width for better design */
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -522,7 +521,7 @@ a.snapchat
     z-index: 1;
 }
 
-.skillItems.icon-skills:hover i{
+icon-skills:hover i{
     outline: 1px solid var(--main-color);
     transform: scale(1.2);
 }
