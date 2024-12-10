@@ -257,7 +257,7 @@ a.facebook{
     background:#034cac;
 }
 a.telegram{
-    background: #50b3ff;        
+    background: #50b3ff;
 }
 a.linkedin{
     background: #034cac;
@@ -456,8 +456,8 @@ a.snapchat
     margin-top: 1.5rem;
 }
 
-/* ==================== Skills section css code ============================ */
-.skills{
+/* ==================== Services section css code ============================ */
+.services{
     position: relative;
 }
 
@@ -477,34 +477,32 @@ a.snapchat
     text-transform: uppercase;
 }
 
-.skills{
+.allServices{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px , auto));
+    grid-template-rows: repeat(auto-fit,minmax(220px , auto));
     align-items: center;
     gap: 2rem;
     position: relative;
     z-index: 1;
 }
 
-.skillItems {
-    width: 100%; /* Make skill items take the full width */
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    box-shadow: rgba(0,0,0,0.1) 0px 1px 3px 0,
-                rgba(0,0,0,0.06) 0px 1px 2px 0px;
+.servicesItem{
+    box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
+                  rgba(0,0,0,0.06)0px 1px 2px 0px;
     padding: 2rem 1rem;
     border-radius: 10px;
     background: var(--gradient-white-bg2);
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px , auto));
 }
 
-.icon-skills{
+.icon-services{
     display: inline-flex;
     position: relative;
 }
 
-.icon-skills i{
+.icon-services i{
     box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
                   rgba(0,0,0,0.06)0px 1px 2px 0px;
     padding: .5rem;
@@ -521,12 +519,12 @@ a.snapchat
     z-index: 1;
 }
 
-icon-skills:hover i{
+.servicesItem:hover i{
     outline: 1px solid var(--main-color);
     transform: scale(1.2);
 }
 
-.icon-skills span{
+.icon-services span{
     position: absolute;
     width: 80px;
     height: 80px;
@@ -537,11 +535,11 @@ icon-skills:hover i{
     animation: animate 1s linear infinite;
 }
 
-.skillItems h3{
+.servicesItem h3{
     margin: 1rem 0 0.5rem;
 }
 
-.skillItems p{
+.servicesItem p{
     margin-bottom: 1.5rem;
     font-size: .9rem;
     color: var(--font-color);
@@ -582,24 +580,24 @@ icon-skills:hover i{
     z-index: 2;
 }
 
-.skills .text-box span{
+.services .text-box span{
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.skills .text-box h3{
+.services .text-box h3{
     margin-top: 1rem;
     margin-bottom: 2rem;
     font-size: 2.3rem;
     font-weight: 800;
 }
 
-.skills .text-box .btn{
+.services .text-box .btn{
     padding: 10px 20px;
 }
 
 
-.skills .showcase .ring{
+.services .showcase .ring{
     width: 100px;
     height: auto;
     position: absolute;
@@ -607,7 +605,7 @@ icon-skills:hover i{
     left: -3%;
 }
 
-.skills .showcase .circle{
+.services .showcase .circle{
     position: absolute;
     width: 70px;
     height: auto;
@@ -616,14 +614,14 @@ icon-skills:hover i{
     filter: blur(3px);
 }
 
-.skills .showcase .circle2{
+.services .showcase .circle2{
     position: absolute;
     width: 40px;
     height: auto;
     filter: blur(3px);
 }
 
-.skills .showcase .circle3{
+.services .showcase .circle3{
     position: absolute;
     width: 70px;
     height: auto;
@@ -632,7 +630,7 @@ icon-skills:hover i{
     left: 22%;
 }
 
-.skills .showcase .half-ring{
+.services .showcase .half-ring{
     position: absolute;
     width: 120px;
     height: auto;
@@ -641,7 +639,7 @@ icon-skills:hover i{
 }
 
 
-/* ==================== Skills section css code ============================ */
+/* ==================== Services section css code ============================ */
 .fillter-buttons{
     text-align: center;
     padding: .5rem;
