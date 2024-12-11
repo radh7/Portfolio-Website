@@ -185,3 +185,67 @@ ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "le
 ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
 ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
 
+
+// document.getElementById('sendBtn').addEventListener('click', async () => {
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const subject = document.getElementById('subject').value;
+//     const message = document.getElementById('message').value;
+
+//     if (!name || !email || !message) {
+//         alert('Please fill in all required fields.');
+//         return;
+//     }
+
+//     try {
+//         const response = await fetch('/api/send-email', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify({ name, email, subject, message }),
+//         });
+
+//         const result = await response.json();
+//         if (response.ok) {
+//             alert('Email sent successfully!');
+//         } else {
+//             alert(`Failed to send email: ${result.error}`);
+//         }
+//     } catch (error) {
+//         console.error('Error sending email:', error);
+//         alert('An unexpected error occurred.');
+//     }
+// });
+
+document.getElementById('sendBtn').addEventListener('click', async () => {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, subject, message }),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            alert('Email sent successfully!');
+        } else {
+            alert(`Failed to send email: ${result.error}`);
+        }
+    } catch (error) {
+        console.error('Error sending email:', error);
+        alert('An unexpected error occurred.');
+    }
+});
