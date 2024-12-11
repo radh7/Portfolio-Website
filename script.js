@@ -186,35 +186,27 @@ ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
 ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
 
 
-document.getElementById('sendBtn').addEventListener('click', async () => {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+ document.getElementById('sendMessage').addEventListener('click', function () {
+        // Get form field values
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
 
-    if (!name || !email || !message) {
-        alert('Please fill in all required fields.');
-        return;
-    }
-
-    try {
-        const response = await fetch('/api/send-email', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ name, email, subject, message }),
-        });
-
-        const result = await response.json();
-        if (response.ok) {
-            alert('Email sent successfully!');
-        } else {
-            alert(`Failed to send email: ${result.error}`);
+        // Validate required fields
+        if (!firstName || !lastName || !email || !subject || !message) {
+            alert("Please fill in all required fields.");
+            return;
         }
-    } catch (error) {
-        console.error('Error sending email:', error);
-        alert('An unexpected error occurred.');
-    }
-});
 
+        // Construct the mailto link
+        const mailtoLink = `mailto:radhikaworkspace07@gmail.com?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(
+            `Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`
+        )}`;
+
+        // Open the default email client
+        window.location.href = mailtoLink;
+    });
