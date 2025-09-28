@@ -459,6 +459,7 @@ a.snapchat
 /* ==================== skills section css code ============================ */
 .skills{
     position: relative;
+    min-height: 100vh;
 }
 
 .main-text{
@@ -1214,4 +1215,5 @@ footer{
         padding: 13px;
     }
 }
+
 
