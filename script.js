@@ -183,7 +183,7 @@ ScrollReveal({
 ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', { origin: "top" });
 ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "left" });
 ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
-ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
+ScrollReveal().reveal('.allskills,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
 
 
  document.getElementById('sendMessage').addEventListener('click', function () {
@@ -210,3 +210,4 @@ ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-her
         // Open the default email client
         window.location.href = mailtoLink;
     });
+
